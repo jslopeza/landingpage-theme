@@ -38,15 +38,35 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
+    <nav id="menu" class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a data-menuanchor="home" class="navbar-brand" href="#home">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a data-menuanchor="about" href="#about">About <span class="sr-only">(current)</span></a></li>
+            <li><a data-menuanchor="testimonials" href="#testimonials">Testimonials</a></li>
+            <li><a data-menuanchor="contact" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div id="fullpage">
       <!-- Slideshow Section -->
-      <div class="section active">
+      <div data-anchor="home" class="section active">
         <header id="myCarousel" class="carousel slide">
           <div class="carousel-inner">
             <div class="item active">
               <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
               <div class="carousel-caption">
-                  <h2>Caption 1</h2>
+                  <h2>Caption 2</h2>
               </div>
             </div>
             <div class="item">
@@ -66,7 +86,7 @@
       </div>
 
       <!-- About Section -->
-      <div class="section">
+      <div data-anchor="about" class="section">
         <h1 class="section-header">About</h1>
         <div class="section-body col-lg-10 col-lg-offset-1">
           <span class="section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero reiciendis, deserunt, cum omnis odit quisquam minus illo nemo! Nisi explicabo reiciendis eius delectus adipisci quidem, asperiores sint ea maiores pariatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis similique, nisi aspernatur. Modi voluptatem est et ad corporis sed rerum, doloribus excepturi accusamus quia beatae voluptate qui nulla, cum fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nam, repellendus natus, inventore aperiam dolorem. Accusamus voluptatum ea, omnis nobis, cumque consectetur veniam dolorum fuga nihil distinctio quia pariatur doloribus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui voluptate nulla, numquam corporis itaque libero quia aperiam quae unde placeat sapiente, molestiae voluptatibus ut vel illum optio ex laborum veniam!</span>
@@ -74,7 +94,7 @@
       </div>
 
       <!-- Testimonials Sections -->
-      <div class="section">
+      <div data-anchor="testimonials" class="section">
         <h1 class="section-header">Testimonials</h1>
         <div class="section-body">
           <div class="section-details col-lg-4">
@@ -99,7 +119,7 @@
       </div> 
 
       <!-- Contact Section -->
-      <div class="section">
+      <div data-anchor="contact" class="section">
         <h1 class="section-header">Contact</h1>
         <div class="section-body">
           <div class="col-lg-6 map-wrapper">

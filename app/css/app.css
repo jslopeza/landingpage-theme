@@ -72,3 +72,8 @@ label {
   background-color: #D5D5D5;
   margin-top: 20px;
 }
+
+.navbar {
+  margin-bottom: 0;
+  z-index: 1;
+}
