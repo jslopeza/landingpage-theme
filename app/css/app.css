@@ -25,10 +25,12 @@ html, body {
   font-size: 60px;
   text-align: center;
   margin-bottom: 30px;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
 .section-body {
+  -ms-flex-positive: 2;
   flex-grow: 2;
 }
 
@@ -38,6 +40,8 @@ html, body {
 }
 
 .fp-tableCell {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
