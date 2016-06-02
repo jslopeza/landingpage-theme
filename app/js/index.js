@@ -7,7 +7,7 @@ $(document).ready(function() {
   function scrollNav() {
     $('.nav a').click(function(){
       //Toggle Class
-      $(".active").removeClass("active");
+      $("nav .active").removeClass("active");
       $(this).closest('li').addClass("active");
       var theClass = $(this).attr("class");
       $('.'+theClass).parent('li').addClass('active');
@@ -20,4 +20,15 @@ $(document).ready(function() {
     $('.scrollTop a').scrollTop();
   }
   scrollNav();
+
+  $('.navbar-brand').click(function ( ) {
+    scrollToHome();
+  });
+
+  function scrollToHome() {
+    console.log('here');
+    $('html, body').stop().animate({
+      scrollTop : $('#home').offset().top - 160
+    }, 1000);
+  }
 });
