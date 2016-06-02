@@ -37,8 +37,8 @@
     <!-- Custom Styles styles -->
     <link rel="stylesheet" href="css/app.css">
   </head>
-  <body>
-    <nav id="menu" class="navbar navbar-default">
+  <body data-spy="scroll" data-target="#menu" style="position: relative">
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -51,7 +51,8 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#about">About <span class="sr-only">(current)</span></a></li>
+            <li class=""><a href="#about">About <span class="sr-only">(current)</span></a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -98,7 +99,7 @@
       <hr>
 
       <!-- Portfolio Section -->
-      <div class="section">
+      <div class="section" id="portfolio">
         <h1 class="section-header">Portfolio</h1>
         <div class="section-body">
           <div class="col-lg-12">
