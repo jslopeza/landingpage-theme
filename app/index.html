@@ -31,8 +31,8 @@
     <!-- Bootstrap compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    <!-- Full Page Scroll -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.0/jquery.fullPage.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
     <!-- Custom Styles styles -->
     <link rel="stylesheet" href="css/app.css">
@@ -47,20 +47,22 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a data-menuanchor="home" class="navbar-brand" href="#home">Brand</a>
+          <a class="navbar-brand" href="#home">Brand</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a data-menuanchor="about" href="#about">About <span class="sr-only">(current)</span></a></li>
-            <li><a data-menuanchor="testimonials" href="#testimonials">Testimonials</a></li>
-            <li><a data-menuanchor="contact" href="#contact">Contact</a></li>
+            <li class="active"><a href="#about">About <span class="sr-only">(current)</span></a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <div id="fullpage">
+
+    <div class="wrapper">
+
       <!-- Slideshow Section -->
-      <div data-anchor="home" class="section active">
+      <div id="home">
         <header id="myCarousel" class="carousel slide">
           <div class="carousel-inner">
             <div class="item active">
@@ -86,15 +88,17 @@
       </div>
 
       <!-- About Section -->
-      <div data-anchor="about" class="section">
+      <div class="section" id="about">
         <h1 class="section-header">About</h1>
         <div class="section-body col-lg-10 col-lg-offset-1">
           <span class="section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero reiciendis, deserunt, cum omnis odit quisquam minus illo nemo! Nisi explicabo reiciendis eius delectus adipisci quidem, asperiores sint ea maiores pariatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis similique, nisi aspernatur. Modi voluptatem est et ad corporis sed rerum, doloribus excepturi accusamus quia beatae voluptate qui nulla, cum fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat nam, repellendus natus, inventore aperiam dolorem. Accusamus voluptatum ea, omnis nobis, cumque consectetur veniam dolorum fuga nihil distinctio quia pariatur doloribus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui voluptate nulla, numquam corporis itaque libero quia aperiam quae unde placeat sapiente, molestiae voluptatibus ut vel illum optio ex laborum veniam!</span>
         </div>
       </div>
 
+      <hr>
+
       <!-- Testimonials Sections -->
-      <div data-anchor="testimonials" class="section">
+      <div class="section" id="testimonials">
         <h1 class="section-header">Testimonials</h1>
         <div class="section-body">
           <div class="section-details col-lg-4">
@@ -118,13 +122,15 @@
         </div>
       </div> 
 
+      <hr>
+
       <!-- Contact Section -->
-      <div data-anchor="contact" class="section">
+      <div class="section" id="contact">
         <h1 class="section-header">Contact</h1>
         <div class="section-body">
           <div class="col-lg-6 map-wrapper">
             <iframe
-              width="600"
+              width="100%"
               height="450"
               class="map-styles"
               frameborder="0" style="border:0"
@@ -153,15 +159,30 @@
             </form>
           </div>
         </div>
-        
-        <!-- Footer -->
-        <footer class="footer">
-          <div class="container">
-            <div class="text-muted">Copyright 2016</div>
-          </div>
-        </footer>
       </div>
     </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="text-muted">Copyright &copy; 2016</div>
+        <div class="social-media-icons">
+
+          <!-- Add Links to your social media -->
+          <a href="">
+            <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
 
 
 
@@ -170,10 +191,6 @@
 
     <!-- Bootstrap compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-    <!-- Full Page Scroll -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.0/vendors/scrolloverflow.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.0/jquery.fullPage.min.js"></script>
 
     <script src="js/index.js"></script>
 

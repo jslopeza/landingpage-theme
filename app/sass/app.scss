@@ -17,6 +17,12 @@ html, body {
 	background-size: cover;
 }
 
+.section {
+	margin: 10% 0;
+	display: flex;
+	flex-direction: column;
+}
+
 .section-details {
 	text-align: center;
 }
@@ -35,11 +41,6 @@ html, body {
 .section-text {
 	font-size: 18px;
 	margin: 30px;
-}
-
-.fp-tableCell {
-	display: flex;
-	flex-direction: column;
 }
 
 .map-wrapper {
@@ -63,8 +64,34 @@ label {
 	height: 100px;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	background-color: #D5D5D5;
 	margin-top: 20px;
+	padding: 15px;
+}
+
+.footer-wrapper {
+	display: flex;
+	flex: 1;
+	margin: 0 5%;
+
+	.text-muted {
+		flex: 9;
+	}
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	background-color: rgba(248, 248, 248, 0.23);
+}
+
+.social-media-icons a {
+	margin : 0 10px 0 0;
+}
+
+hr {
+	margin: 20px 50px;
 }
 
 .navbar {

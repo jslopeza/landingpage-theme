@@ -1,15 +1,5 @@
 $(document).ready(function() {
-  $('#fullpage').fullpage({
-    css3: true,
-    easing: 'swing',
-    anchors: ['home', 'about', 'testimonials', 'contact'],
-    menu: '#menu',
-    easingcss3: 'ease-out',
-    controlArrows: false,
-    scrollOverflow: true,
-    scrollOverflowOptions: null,
-  });
-
+  $('#home').height(window.innerHeight);
   $('#myCarousel').carousel({
     interval: 3000
   });

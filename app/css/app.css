@@ -17,6 +17,14 @@ html, body {
   background-size: cover;
 }
 
+.section {
+  margin: 10% 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .section-details {
   text-align: center;
 }
@@ -37,13 +45,6 @@ html, body {
 .section-text {
   font-size: 18px;
   margin: 30px;
-}
-
-.fp-tableCell {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .map-wrapper {
@@ -69,8 +70,38 @@ label {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: #D5D5D5;
   margin-top: 20px;
+  padding: 15px;
+}
+
+.footer-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 0 5%;
+}
+
+.footer-wrapper .text-muted {
+  -ms-flex: 9;
+  flex: 9;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(248, 248, 248, 0.23);
+}
+
+.social-media-icons a {
+  margin: 0 10px 0 0;
+}
+
+hr {
+  margin: 20px 50px;
 }
 
 .navbar {
