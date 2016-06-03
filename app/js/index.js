@@ -26,7 +26,6 @@ $(document).ready(function() {
   });
 
   function scrollToHome() {
-    console.log('here');
     $('html, body').stop().animate({
       scrollTop : $('#home').offset().top - 160
     }, 1000);
