@@ -59,6 +59,7 @@ nav .container .navbar-collapse {
   height: 100%;
   background-position: center;
   background-size: cover;
+  -webkit-mask-image: -webkit-gradient(linear, left 50%, left bottom, from(black), to(transparent));
 }
 
 .section {
@@ -76,20 +77,16 @@ nav .container .navbar-collapse {
 
 .section-header {
   font-size: 60px;
-  text-align: center;
-  margin-bottom: 30px;
+  margin: 30px;
   -ms-flex-positive: 1;
   flex-grow: 1;
-}
-
-.section-body {
-  -ms-flex-positive: 2;
-  flex-grow: 2;
+  text-transform: uppercase;
 }
 
 .section-text {
   font-size: 18px;
   margin: 30px;
+  line-height: 40px;
 }
 
 .map-wrapper {
