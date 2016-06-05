@@ -2,8 +2,14 @@ html, body {
   height: 100%;
 }
 
+@font-face {
+  font-family: ArcherPro;
+  src: url("../fonts/ArcherPro-Medium.otf");
+}
+
 body {
   overflow-x: hidden;
+  font-family: ArcherPro;
 }
 
 .loader {
