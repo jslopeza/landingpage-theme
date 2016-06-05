@@ -1,5 +1,10 @@
 $(document).ready(function() {
+  $(window).load(function() {
+    $(".loader").fadeOut("slow");
+  });
+
   $('#home').height(window.innerHeight);
+
   $('#myCarousel').carousel({
     interval: 3000
   });
