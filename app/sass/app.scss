@@ -2,6 +2,40 @@ html, body {
 	height: 100%;
 }
 
+nav {
+	height: 65px;
+
+	.container {
+		margin-top: 8px;
+		margin-bottom: 7px;
+
+		.navbar-collapse {
+			background-color: #FFF;
+		}
+	}
+}
+
+.navbar-brand {
+	padding: 7px 15px;
+}
+
+.nav li {
+	font-size: 20px;
+	font-variant: small-caps;
+}
+
+.logo-img {
+	background-image: url('../images/Logo.png');
+    height: 35px;
+    width: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.navbar-default {
+	background-color: #FFFFFF;
+}
+
 .carousel, .item, .active {
 	height: 100%;
 }
@@ -18,7 +52,7 @@ html, body {
 }
 
 .section {
-	margin: 10% 0;
+	margin: 7.5% 0;
 	padding: 20px 0;
 	display: flex;
 	flex-direction: column;
