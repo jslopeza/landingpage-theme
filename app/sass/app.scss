@@ -2,6 +2,10 @@ html, body {
 	height: 100%;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 nav {
 	height: 65px;
 
@@ -63,7 +67,6 @@ nav {
 }
 
 .section {
-	margin: 7.5% 0;
 	padding: 20px 0;
 	display: flex;
 	flex-direction: column;
@@ -74,7 +77,7 @@ nav {
 }
 
 .section-header {
-	font-size: 60px;
+	font-size: 50px;
 	margin: 30px;
 	flex-grow: 1;
 	text-transform: uppercase;
@@ -86,8 +89,36 @@ nav {
 	line-height: 40px;
 }
 
+.portfolio-testimonial-section {
+	background: #fbd279;
+	background: -moz-linear-gradient(top,  #fbd279 0%, #fa6869 47%, #fa6869 47%, #fa2464 100%);
+	background: -webkit-linear-gradient(top,  #fbd279 0%,#fa6869 47%,#fa6869 47%,#fa2464 100%);
+	background: linear-gradient(to bottom,  #fbd279 0%,#fa6869 47%,#fa6869 47%,#fa2464 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbd279', endColorstr='#fa2464',GradientType=0 );
+	padding-bottom: 50px;
+}
+
+.header-center {
+	text-align: center;
+}
+
+.header-white {
+	color: #fff;
+}
+
 .map-wrapper {
 	margin-bottom: 35px;
+}
+
+.testimonial-card {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 25px;
+	margin: 10px 5px;
+}
+
+.testimonial-img {
+	width: 50%;
 }
 
 .map-styles {
@@ -103,28 +134,56 @@ label {
 	margin-left: 20px;
 }
 
+.form-group {
+	label {
+		font-weight: 400;
+		font-size: 25px;
+	}
+
+	input, textarea {
+		border: 2px solid black;
+		border-radius: 0;
+	}
+}
+
+.submit-btn {
+	width: 100%;
+	border: 0px;
+	border-radius: 0;
+	background: #f68179;
+	background: -moz-linear-gradient(top,  #f68179 0%, #eb5c7a 100%);
+	background: -webkit-linear-gradient(top,  #f68179 0%,#eb5c7a 100%);
+	background: linear-gradient(to bottom,  #f68179 0%,#eb5c7a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f68179', endColorstr='#eb5c7a',GradientType=0 );
+}
+
 .footer {
 	height: 100px;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	background-color: #D5D5D5;
+	background-color: #000000;
+	color: #fff;
 	margin-top: 20px;
 	padding: 15px;
+
+	.text-muted {
+		color: #fff;
+		font-size: 18px;
+	}
+
+	.social-media-icons a {
+		color: #fff;
+	}
 }
 
 .footer-wrapper {
 	display: flex;
+	justify-content: space-around;
 	flex: 1;
-	margin: 0 5%;
-
-	.text-muted {
-		flex: 9;
-	}
 }
 
 .social-media-icons a {
-	margin : 0 10px 0 0;
+	margin : 0 20px 0 0;
 }
 
 hr {
