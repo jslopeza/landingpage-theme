@@ -44,6 +44,16 @@ nav .container .navbar-collapse {
   height: 100%;
 }
 
+.carousel-caption {
+  bottom: 0;
+  top: 50%;
+}
+
+.carousel-caption h2 {
+  text-transform: uppercase;
+  font-size: 54px;
+}
+
 .fill {
   width: 100%;
   height: 100%;
