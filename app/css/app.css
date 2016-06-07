@@ -87,6 +87,33 @@ nav .container .navbar-collapse {
   font-variant: small-caps;
 }
 
+.nav li a {
+  border-radius: 3px;
+}
+
+.nav li:active {
+  background-color: #F92364;
+  border-radius: 3px;
+}
+
+.nav .active a {
+  border: 1px solid #F92364;
+  border-radius: 3px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #000;
+}
+
+.navbar-default .navbar-nav > li:active > a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  background-color: #FFF;
+  color: #000;
+}
+
 .logo-img {
   background-image: url("../images/Logo.png");
   height: 35px;
@@ -211,6 +238,12 @@ label {
   background: #f68179;
   background: linear-gradient(to bottom, #f68179 0%, #eb5c7a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f68179', endColorstr='#eb5c7a',GradientType=0 );
+}
+
+.submit-btn:active {
+  background: #b53d5b;
+  background: linear-gradient(to bottom, #b53d5b 0%, #ed5c7c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b53d5b', endColorstr='#ed5c7c',GradientType=0 );
 }
 
 .footer {
