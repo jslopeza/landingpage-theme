@@ -1,7 +1,8 @@
+$(window).load(function() {
+  $(".loader").fadeOut("slow");
+});
+
 $(document).ready(function() {
-  $(window).load(function() {
-    $(".loader").fadeOut("slow");
-  });
 
   $('#home').height(window.innerHeight);
 
