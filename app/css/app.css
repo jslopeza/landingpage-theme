@@ -7,6 +7,11 @@ html, body {
   src: url("../fonts/ArcherPro-Medium.otf");
 }
 
+@font-face {
+  font-family: Bebas;
+  src: url("../fonts/bebas.TTF");
+}
+
 body {
   overflow-x: hidden;
   font-family: ArcherPro;
@@ -19,7 +24,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: #E1C9A1;
+  background: #FBC377;
 }
 
 #loader {
@@ -87,31 +92,26 @@ nav .container .navbar-collapse {
   font-variant: small-caps;
 }
 
-.nav li a {
-  border-radius: 3px;
-}
-
 .nav li:active {
   background-color: #F92364;
-  border-radius: 3px;
 }
 
 .nav .active a {
-  border: 1px solid #F92364;
-  border-radius: 3px;
+  background-color: #F92364;
 }
 
 .navbar-default .navbar-nav > li > a {
   color: #000;
+  font-family: Bebas;
 }
 
-.navbar-default .navbar-nav > li:active > a {
-  color: #fff;
+.navbar-default .navbar-nav > li > a:hover {
+  border: 1px solid #F92364;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-  background-color: #FFF;
-  color: #000;
+  background-color: #F92364;
+  color: #fff;
 }
 
 .logo-img {
@@ -141,7 +141,8 @@ nav .container .navbar-collapse {
 
 .carousel-caption h2 {
   text-transform: uppercase;
-  font-size: 54px;
+  font-size: 71px;
+  font-family: Bebas;
 }
 
 .fill {
@@ -174,6 +175,7 @@ nav .container .navbar-collapse {
   -ms-flex-positive: 1;
   flex-grow: 1;
   text-transform: uppercase;
+  font-family: Bebas;
 }
 
 .section-text {
